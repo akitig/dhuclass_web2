@@ -1,9 +1,9 @@
 <?php
-// 共通のニュースデータ
-$news = array(
-    array('id' => 1, 'title' => 'news1', 'content' => 'news1 main text'),
-    array('id' => 2, 'title' => 'news2', 'content' => 'news2 main text'),
-    array('id' => 3, 'title' => 'news3', 'content' => 'news3 main text'),
-    // 新しいニュースを追加
-    array('id' => 4, 'title' => 'news4', 'content' => 'news4 main text'),
-);
+// 共通のニュースデータをJSONファイルから読み込む
+$newsJson = file_get_contents('news.json');
+$news = json_decode($newsJson, true);
+
+if ($news === null) {
+    // JSON デコードが失敗した場合の処理
+    die('Error loading news data from JSON file.');
+}
