@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "news1",
+        "content": "news1 main text"
+    },
+    {
+        "id": 2,
+        "title": "news2",
+        "content": "news2 main text"
+    },
+    {
+        "id": 3,
+        "title": "news3",
+        "content": "news3 main text"
+    },
+    {
+        "id": 4,
+        "title": "news4",
+        "content": "news4 main text"
+    }
+]
